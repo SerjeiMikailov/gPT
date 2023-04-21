@@ -37,14 +37,14 @@ def generate_text(prompt):
 if __name__ == "__main__":
     r = sr.Recognizer()
     with sr.Microphone() as source:
-        print("Say something!")
+        print("Escutando...")
         audio = r.listen(source)
 
     try:
         text_prompt = r.recognize_google(audio)
-        print("Google Speech Recognition thinks you said " + text_prompt)
+        print("O reconhecimento de voz entendeu: " + text_prompt)
     except sr.UnknownValueError:
-        print("Google Speech Recognition could not understand audio")
+        print("O reconhecimento de voz não entendeu nada...")
         text_prompt = None
     except sr.RequestError as e:
         print("Could not request results from Google Speech Recognition service; {0}".format(e))
