@@ -1,4 +1,5 @@
 import requests
+from gtts import gTTS
 import speech_recognition as sr
 from key import api_key
 
@@ -12,10 +13,10 @@ def generate_text(prompt):
     }
     data = {
         "prompt": prompt,
-        "max_tokens": 500,
+        "max_tokens": 2030,
         "n": 1,
         "stop": None,
-        "temperature": 1.0,
+        "temperature": 2
     }
 
     response = requests.post(url, headers=headers, json=data)
@@ -58,3 +59,7 @@ if __name__ == "__main__":
             print("Não foi possível gerar o texto.")
     else:
         print("Não foi possível converter o áudio em texto.")
+
+
+tts = gTTS(result)
+tts.save('audios/response.mp3')
