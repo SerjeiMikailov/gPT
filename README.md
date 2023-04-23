@@ -2,8 +2,10 @@
 
 ### Uma aplicação que usa a api "davinci" GPT3 do chat gpt
 
-A ideia inicial era criar uma aplicação para usar o chatGPT por voz, porém a versão da IA disponível na API não ajuda muito, logo tive a ideia gênial
-de modificar o atributo "temperature", responsável pela aleatoriedade das respostas... RESULTADO?? virou uma maquina de fanfics maluca
+A ideia inicial era criar uma aplicação para usar o chatGPT por voz, porém tive uma ideia gênial...
+Modificar o atributo "temperature", responsável pela aleatoriedade das respostas... RESULTADO?? virou uma maquina de fanfics maluca.
+
+Lembrando que tu pode modificar para usar ele do "jeito correto", e não se esqueça que essa aplicação funciona por comandos de voz.
 
 ### Teste por sua conta e risco, lembrando que é necessário ter a própria key da API
 
