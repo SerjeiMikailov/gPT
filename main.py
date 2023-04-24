@@ -13,10 +13,10 @@ def generate_text(prompt):
     }
     data = {
         "prompt": prompt,
-        "max_tokens": 2030,
+        "max_tokens": 1000,
         "n": 1,
         "stop": None,
-        "temperature": 2
+        "temperature": 1.0
     }
 
     response = requests.post(url, headers=headers, json=data)
